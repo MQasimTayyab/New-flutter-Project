@@ -1,0 +1,9 @@
+<svg width="65" height="47" viewBox="0 0 65 47" fill="none" xmlns="http://www.w3.org/2000/svg" 
+<rect width="95" height="47" fill="url(#pattern0_8_175)"/>
+<defs>
+<pattern id="pattern0_8_175" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use href="assets/svg/panda.svg" transform="matrix(0.00208333 0 0 0.00421099 0 -0.257979)"/>
+</pattern>
+<image id="assets/svg/panda.svg" width="480" height="360" preserveAspectRatio="none" href="data:assets/svg/panda.svg;/>
+</defs>
+</svg>
