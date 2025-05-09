@@ -63,7 +63,7 @@ class Fooddelivery extends StatelessWidget {
                 CommonText(
                     text: AppStrings.fooddelivery,
                     Styles: Styles.textstyleHeaderone(context,
-                        color: AppColor.black)),
+                        color: AppColor.white)),
                 CommonText(
                     text: AppStrings.order,
                     Styles: Styles.textstyleHeaderfour(context,
