@@ -1,0 +1,45 @@
+//cartcoments code///////////////
+
+                  // Container(
+                  //   decoration: BoxDecoration(
+                  //       border: Border(
+                  //           bottom: BorderSide(
+                  //               width: screenWidth * 0.005,
+                  //               color: Colors.grey.withOpacity(0.5)))),
+                  // ),
+                  // SizedBox(
+                  //   height: screenHeight * 0.02,
+                  // ),
+
+//elevated button//////////////////
+
+// Padding(
+//                       padding: EdgeInsets.symmetric(
+//                           horizontal: screenWidth * 0.05),
+//                       child: SizedBox(
+//                         width: screenWidth * 1,
+//                         height: screenHeight * 0.05,
+//                         child: ElevatedButton(
+//                           onPressed: () {},
+//                           style: ElevatedButton.styleFrom(
+//                             shape: RoundedRectangleBorder(
+//                               borderRadius: BorderRadius.circular(5),
+//                             ),
+//                             backgroundColor: Colors.pink,
+//                             foregroundColor: Colors.white,
+//                           ),
+//                           child: Text('Place order'),
+//                         ),
+//                       ),
+//                     ),
+/////// IconButton////////////////////////////////////////////////////////////////
+  // IconButton(
+              //   icon: Icon(
+              //     size: screenWidth * 0.1,
+              //     Icons.close,
+              //     color: Color(0xffD60665),
+              //   ),
+              //   onPressed: () {
+              //     Navigator.pop(context);
+              //   },
+              // ),

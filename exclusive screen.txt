@@ -1,0 +1,271 @@
+//Header image & icon...............
+
+ Container(
+                width: screenWidth * 1,
+                height: screenHeight * 0.25,
+                decoration: BoxDecoration(
+                    image: DecorationImage(
+                        image: AssetImage(
+                          'assets/images/exclusive.png',
+                        ),
+                        fit: BoxFit.cover)),
+                child: Column(
+                  children: [
+                    Padding(
+                      padding: EdgeInsets.only(
+                          left: screenWidth * 0.05, right: screenWidth * 0.05),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Container(
+                              width: screenWidth * 0.08,
+                              height: screenHeight * 0.08,
+                              decoration: BoxDecoration(
+                                  color: Color(0xFFFFFFFF),
+                                  shape: BoxShape.circle),
+                              child: GestureDetector(
+                                onTap: () {
+                                  Navigator.pop(context);
+                                },
+                                child: Center(
+                                  child: Commonsvg(
+                                    svgPath: 'assets/svg/Vector.svg',
+                                    screenWidth: screenWidth * 0.02,
+                                    screenHeight: screenHeight * 0.02,
+                                    svgcolor: Color(0xffD60665),
+                                  ),
+                                ),
+                              )
+
+                              // child: IconButton(
+                              //   icon: Icon(
+                              //     size: screenWidth * 0.035,
+                              //     Icons.arrow_back,
+                              //     color: Color(0xffD60665),
+                              //   ),
+                              //   onPressed: () {
+                              //     Navigator.pop(context);
+                              //   },
+                              // )
+                              ),
+                        ],
+                      ),
+                    )
+                  ],
+                ),
+              ),
+///Banner Exclusive deal 1....
+Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            commontext(
+                                text: 'Exclusive Subway Deal 1',
+                                fontSize: screenWidth * 0.045,
+                                fontFamily: 'Poppins',
+                                fontWeight: FontWeight.bold),
+                            commontext(
+                                text: 'Rs.333.00',
+                                fontSize: screenWidth * 0.03,
+                                fontFamily: 'Poppins',
+                                color: Color(0xff000000).withOpacity(0.7))
+                          ],
+                        ),
+                        SizedBox(
+                          height: screenHeight * 0.005,
+                        ),
+                        commontext(
+                          text: '6 inch sub & 250 ml drink',
+                          fontSize: screenWidth * 0.03,
+                          color: Color(0xff000000).withOpacity(0.7),
+                          fontFamily: 'Poppins',
+                        )
+                      ],
+                    ),
+///choose your flavor...............
+  Column(
+                          // mainAxisAlignment: MainAxisAlignment.start,
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            GestureDetector(
+                              onTap: () {
+                                setState(() {
+                                  selectedIndex = 0;
+                                  selectedFlavor = 'Chicken Tikka';
+                                });
+                              },
+                              child: Row(
+                                children: [
+                                  Container(
+                                    width: screenWidth * 0.05,
+                                    height: screenHeight * 0.05,
+                                    decoration: BoxDecoration(
+                                      shape: BoxShape.circle,
+                                      border: Border.all(
+                                        color: Color(0xffD60665),
+                                        width: selectedIndex == 0 ? 5.0 : 2.0,
+                                      ),
+                                    ),
+                                  ),
+                                  SizedBox(width: screenWidth * 0.05),
+                                  Expanded(
+                                    child: Row(
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.spaceBetween,
+                                      children: [
+                                        commontext(
+                                            text: 'Chicken Tikka',
+                                            fontSize: screenWidth * 0.03,
+                                            fontFamily: 'Poppins',
+                                            fontWeight: FontWeight.w500),
+                                        commontext(
+                                          text: 'Rs.0.00',
+                                          fontSize: screenWidth * 0.03,
+                                          color: Color(0xff000000)
+                                              .withOpacity(0.6),
+                                          fontFamily: 'Poppins',
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            GestureDetector(
+                              onTap: () {
+                                setState(() {
+                                  selectedIndex = 1;
+                                  selectedFlavor = 'Chicken Tikka';
+                                });
+                              },
+                              child: Row(
+                                children: [
+                                  Container(
+                                    width: screenWidth * 0.05,
+                                    height: screenHeight * 0.05,
+                                    decoration: BoxDecoration(
+                                      shape: BoxShape.circle,
+                                      border: Border.all(
+                                        color: Color(0xffD60665),
+                                        width: selectedIndex == 1 ? 5.0 : 2.0,
+                                      ),
+                                    ),
+                                  ),
+                                  SizedBox(width: screenWidth * 0.05),
+                                  Expanded(
+                                    child: Row(
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.spaceBetween,
+                                      children: [
+                                        commontext(
+                                            text: ' Chicken Teriyaki',
+                                            fontSize: screenWidth * 0.03,
+                                            fontFamily: 'Poppins',
+                                            fontWeight: FontWeight.w500),
+                                        commontext(
+                                          text: 'Rs.0.00',
+                                          fontSize: screenWidth * 0.03,
+                                          color: Color(0xff000000)
+                                              .withOpacity(0.6),
+                                          fontFamily: 'Poppins',
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            GestureDetector(
+                              onTap: () {
+                                setState(() {
+                                  selectedIndex = 2;
+                                  selectedFlavor = 'Chicken Fajita';
+                                });
+                              },
+                              child: Row(
+                                children: [
+                                  Container(
+                                    width: screenWidth * 0.05,
+                                    height: screenHeight * 0.05,
+                                    decoration: BoxDecoration(
+                                      shape: BoxShape.circle,
+                                      border: Border.all(
+                                        color: Color(0xffD60665),
+                                        width: selectedIndex == 2 ? 5.0 : 2.0,
+                                      ),
+                                    ),
+                                  ),
+                                  SizedBox(width: screenWidth * 0.05),
+                                  Expanded(
+                                    child: Row(
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.spaceBetween,
+                                      children: [
+                                        commontext(
+                                            text: ' Chicken Fajita',
+                                            fontSize: screenWidth * 0.03,
+                                            fontFamily: 'Poppins',
+                                            fontWeight: FontWeight.w500),
+                                        commontext(
+                                          text: 'Rs.0.00',
+                                          fontSize: screenWidth * 0.03,
+                                          color: Color(0xff000000)
+                                              .withOpacity(0.6),
+                                          fontFamily: 'Poppins',
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            GestureDetector(
+                              onTap: () {
+                                setState(() {
+                                  selectedIndex = 3;
+                                  selectedFlavor = 'BBQ';
+                                });
+                              },
+                              child: Row(
+                                children: [
+                                  Container(
+                                    width: screenWidth * 0.05,
+                                    height: screenHeight * 0.05,
+                                    decoration: BoxDecoration(
+                                      shape: BoxShape.circle,
+                                      border: Border.all(
+                                        color: Color(0xffD60665),
+                                        width: selectedIndex == 3 ? 5.0 : 2.0,
+                                      ),
+                                    ),
+                                  ),
+                                  SizedBox(width: screenWidth * 0.05),
+                                  Expanded(
+                                    child: Row(
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.spaceBetween,
+                                      children: [
+                                        commontext(
+                                            text: ' BBQ',
+                                            fontSize: screenWidth * 0.03,
+                                            fontFamily: 'Poppins',
+                                            fontWeight: FontWeight.w500),
+                                        commontext(
+                                          text: 'Rs.0.00',
+                                          fontSize: screenWidth * 0.03,
+                                          color: Color(0xff000000)
+                                              .withOpacity(0.6),
+                                          fontFamily: 'Poppins',
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ],
+                        ),
+
+///

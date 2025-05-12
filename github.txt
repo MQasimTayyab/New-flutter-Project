@@ -1,0 +1,45 @@
+git@github.com:MQasimTayyab/food_panda.git
+
+import 'package:flutter/material.dart';
+
+class CommonAssetImage extends StatelessWidget {
+  const CommonAssetImage({
+    super.key,
+    required this.imagepath,
+    required this.screenHeight,
+    required this.screenWidth,
+  });
+  final String imagepath;
+
+  final double screenHeight;
+  final double screenWidth;
+
+  @override
+  Widget build(BuildContext context) {
+    return Image.asset(
+      imagepath,
+      
+      height: screenHeight,
+      width: screenWidth,
+      fit: BoxFit.contain,
+    );
+  }
+}
+
+//example Widget build(BuildContext context) {
+  if (issvg) {
+    return SvgPicture.asset(
+      imagepath,
+      height: screenHeight,
+      width: screenWidth,
+      fit: BoxFit.contain,
+    );
+  } else {
+    return Image.asset(
+      imagepath,
+      height: screenHeight,
+      width: screenWidth,
+      fit: BoxFit.contain,
+    );
+  }
+}
