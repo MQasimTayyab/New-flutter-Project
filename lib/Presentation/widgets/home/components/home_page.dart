@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
+import 'package:flutter_proj/Data/app_color.dart';
 import 'package:flutter_proj/Data/app_strings.dart';
 import 'package:flutter_proj/Data/common_textstyle.dart';
 
@@ -113,10 +114,9 @@ class _HomePageState extends State<HomePage> {
                           children: [
                             CommonText(
                                 text: AppStrings.yourresturant,
-                                Styles: Styles.textstyleHeaderone(
-                                  context,
-                                  fontWeight: FontWeight.w600,
-                                ))
+                                Styles: Styles.textstyleHeaderone(context,
+                                    fontWeight: FontWeight.w600,
+                                    color: AppColor.black))
                             // commontext(
                             //     text: 'Your Restaurants',
                             //     fontSize: screenWidth * 0.04,
