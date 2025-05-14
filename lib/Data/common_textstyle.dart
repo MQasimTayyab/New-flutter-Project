@@ -13,7 +13,7 @@ class Styles {
 
     return TextStyle(
       fontSize: fontSize ?? screenWidth * 0.04,
-      color: color ?? AppColor.white,
+      color: color ?? AppColor.black,
       fontWeight: fontWeight ?? FontWeight.bold,
       fontFamily: fontFamily ?? 'Poppins',
     );

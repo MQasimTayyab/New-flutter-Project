@@ -99,8 +99,9 @@ class _ExclusiveState extends State<Exclusive> {
                                 child: Center(
                                   child: CommonText(
                                       text: AppStrings.onerequied,
-                                      Styles:
-                                          Styles.textstyleHeaderfive(context)),
+                                      Styles: Styles.textstyleHeaderfive(
+                                          context,
+                                          fontWeight: FontWeight.w500)),
                                 ))
                           ],
                         ),
