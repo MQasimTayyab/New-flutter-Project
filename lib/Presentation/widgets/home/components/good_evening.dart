@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_proj/Data/app_strings.dart';
 import 'package:flutter_proj/Data/common_textstyle.dart';
-
 import 'package:flutter_proj/Presentation/common/common_asset_image.dart';
+
 import 'package:flutter_proj/Presentation/common/common_text.dart';
 
 class goodevening extends StatelessWidget {
@@ -67,16 +67,16 @@ class goodevening extends StatelessWidget {
             Column(
               mainAxisAlignment: MainAxisAlignment.start,
               children: [
-                CommonAssetImage(
-                    imagepath: 'assets/images/good.png',
-                    screenHeight: screenHeight * 0.12,
-                    screenWidth: screenWidth * 0.28),
-                //  Image.asset(
-                //   'assets/images/good.png',
-                //   height: screenHeight * 0.12,
-                //   width: screenWidth * 0.28,
-                //   fit: BoxFit.contain,
-                // ),
+                // AssetImages(
+                //     imagepath: 'assets/images/good.png',
+                //     screenHeight: screenHeight * 0.12,
+                //     screenWidth: screenWidth * 0.28),
+                Image.asset(
+                  'assets/images/good.png',
+                  height: screenHeight * 0.12,
+                  width: screenWidth * 0.28,
+                  fit: BoxFit.contain,
+                ),
               ],
             )
           ]),

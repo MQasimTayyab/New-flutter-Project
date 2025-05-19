@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
-class CommonAssetImage extends StatelessWidget {
-  const CommonAssetImage({
+class AssetImages extends StatelessWidget {
+  const AssetImages({
     super.key,
     this.imagepath = '',
     this.issvg = true,

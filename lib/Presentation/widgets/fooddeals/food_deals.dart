@@ -4,10 +4,6 @@ import 'package:flutter_proj/Presentation/widgets/fooddeals/components/popular.d
 import 'package:flutter_proj/Presentation/widgets/fooddeals/components/subway_container.dart';
 import 'package:flutter_proj/Presentation/widgets/fooddeals/components/tabbar.dart';
 
-void main() {
-  runApp(Fooddeals());
-}
-
 class Fooddeals extends StatefulWidget {
   const Fooddeals({super.key});
 

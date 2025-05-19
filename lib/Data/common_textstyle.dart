@@ -1,6 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_proj/Data/app_color.dart';
 
+extension TextScaler on BuildContext {
+  double get textScaleFactor {
+    final scale = MediaQuery.of(this).textScaler.scale(12);
+    return scale > 1 ? 0.9 : scale;
+  }
+}
+
 class Styles {
   static TextStyle textstyleHeaderone(
     BuildContext context, {
@@ -11,8 +18,11 @@ class Styles {
   }) {
     final double screenWidth = MediaQuery.of(context).size.width;
 
+    // final double textscaleFactor = MediaQuery.of(context).textScaleFactor;
+
     return TextStyle(
       fontSize: fontSize ?? screenWidth * 0.04,
+      // fontSize: fontSize ?? 16.0 * textscaleFactor,
       color: color ?? AppColor.black,
       fontWeight: fontWeight ?? FontWeight.bold,
       fontFamily: fontFamily ?? 'Poppins',
@@ -27,8 +37,10 @@ class Styles {
     String? fontFamily,
   }) {
     final double screenWidth = MediaQuery.of(context).size.width;
+    // final double textscaleFactor = MediaQuery.of(context).textScaleFactor;
     return TextStyle(
       fontSize: fontSize ?? screenWidth * 0.035,
+      // fontSize: 14.0 * textscaleFactor,
       color: color ?? AppColor.black,
       fontWeight: fontWeight ?? FontWeight.w500,
       fontFamily: fontFamily ?? 'Poppins',
@@ -43,8 +55,10 @@ class Styles {
     String? fontFamily,
   }) {
     final double screenWidth = MediaQuery.of(context).size.width;
+    final double textscaleFactor = MediaQuery.of(context).textScaleFactor;
     return TextStyle(
       fontSize: fontSize ?? screenWidth * 0.025,
+      // fontSize: 10.0 * textscaleFactor,
       color: color ?? AppColor.black,
       fontWeight: fontWeight ?? FontWeight.w500,
       fontFamily: fontFamily ?? 'Poppins',

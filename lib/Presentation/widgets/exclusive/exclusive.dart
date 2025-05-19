@@ -9,10 +9,6 @@ import 'package:flutter_proj/Presentation/common/common_text.dart';
 import 'package:flutter_proj/Presentation/widgets/exclusive/components/banner_text.dart';
 import 'package:flutter_proj/Presentation/widgets/exclusive/components/header_image.dart';
 
-void main() {
-  runApp(Exclusive());
-}
-
 class Exclusive extends StatefulWidget {
   const Exclusive({super.key});
   @override

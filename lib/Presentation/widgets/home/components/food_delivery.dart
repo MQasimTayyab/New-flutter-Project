@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_proj/Data/app_color.dart';
 import 'package:flutter_proj/Data/app_strings.dart';
 import 'package:flutter_proj/Data/common_textstyle.dart';
+import 'package:flutter_proj/Presentation/common/common_asset_image.dart';
 
 import 'package:flutter_proj/Presentation/common/common_text.dart';
 
@@ -74,6 +75,11 @@ class Fooddelivery extends StatelessWidget {
           SizedBox(
             // width: screenWidth * 0.23,
             height: screenHeight * 0.14,
+            // child: AssetImages(
+            //   screenHeight: screenHeight * 0.3,
+            //   screenWidth: screenWidth * 0.3,
+            //   imagepath: 'assets/images/foodd.png',
+            // )
             child: Image.asset(
               'assets/images/foodd.png',
               fit: BoxFit.contain,
