@@ -144,10 +144,8 @@ class _ExclusiveState extends State<Exclusive> {
                           children: [
                             GestureDetector(
                               onTap: () {
-                                setState(() {
-                                  selectedIndex = 0;
-                                  selectedFlavor = 'Chicken Tikka';
-                                });
+                                // selectedIndex = 0;
+                                // selectedFlavor = 'Chicken Tikka';
                               },
                               child: Row(
                                 children: [
@@ -197,10 +195,8 @@ class _ExclusiveState extends State<Exclusive> {
                             ),
                             GestureDetector(
                               onTap: () {
-                                setState(() {
-                                  selectedIndex = 1;
-                                  selectedFlavor = 'Chicken Tikka';
-                                });
+                                // selectedIndex = 1;
+                                // selectedFlavor = 'Chicken Tikka';
                               },
                               child: Row(
                                 children: [
@@ -250,10 +246,8 @@ class _ExclusiveState extends State<Exclusive> {
                             ),
                             GestureDetector(
                               onTap: () {
-                                setState(() {
-                                  selectedIndex = 2;
-                                  selectedFlavor = 'Chicken Fajita';
-                                });
+                                // selectedIndex = 2;
+                                // selectedFlavor = 'Chicken Fajita';
                               },
                               child: Row(
                                 children: [
@@ -303,10 +297,8 @@ class _ExclusiveState extends State<Exclusive> {
                             ),
                             GestureDetector(
                               onTap: () {
-                                setState(() {
-                                  selectedIndex = 3;
-                                  selectedFlavor = 'BBQ';
-                                });
+                                // selectedIndex = 3;
+                                // selectedFlavor = 'BBQ';
                               },
                               child: Row(
                                 children: [
@@ -406,10 +398,8 @@ class _ExclusiveState extends State<Exclusive> {
                           children: [
                             GestureDetector(
                               onTap: () {
-                                setState(() {
-                                  selectedIndx = 0;
-                                  selectedFlavr = 'Pepsi';
-                                });
+                                selectedIndx = 0;
+                                selectedFlavr = 'Pepsi';
                               },
                               child: Row(
                                 children: [
@@ -459,10 +449,8 @@ class _ExclusiveState extends State<Exclusive> {
                             ),
                             GestureDetector(
                               onTap: () {
-                                setState(() {
-                                  selectedIndx = 1;
-                                  selectedFlavr = '7up';
-                                });
+                                selectedIndx = 1;
+                                selectedFlavr = '7up';
                               },
                               child: Row(
                                 children: [
@@ -512,10 +500,8 @@ class _ExclusiveState extends State<Exclusive> {
                             ),
                             GestureDetector(
                               onTap: () {
-                                setState(() {
-                                  selectedIndx = 2;
-                                  selectedFlavr = 'Mirinda';
-                                });
+                                selectedIndx = 2;
+                                selectedFlavr = 'Mirinda';
                               },
                               child: Row(
                                 children: [
@@ -565,10 +551,8 @@ class _ExclusiveState extends State<Exclusive> {
                             ),
                             GestureDetector(
                               onTap: () {
-                                setState(() {
-                                  selectedIndx = 3;
-                                  selectedFlavr = 'Mountain drew';
-                                });
+                                selectedIndx = 3;
+                                selectedFlavr = 'Mountain drew';
                               },
                               child: Row(
                                 children: [
@@ -644,9 +628,7 @@ class _ExclusiveState extends State<Exclusive> {
                         GestureDetector(
                           onTap: () {
                             if (_counter > 1) {
-                              setState(() {
-                                _counter--;
-                              });
+                              _counter--;
                             }
                           },
                           child: Container(
@@ -679,9 +661,7 @@ class _ExclusiveState extends State<Exclusive> {
                         SizedBox(width: screenWidth * 0.04),
                         GestureDetector(
                           onTap: () {
-                            setState(() {
-                              _counter++;
-                            });
+                            _counter++;
                           },
                           child: Container(
                             width: screenWidth * 0.07,

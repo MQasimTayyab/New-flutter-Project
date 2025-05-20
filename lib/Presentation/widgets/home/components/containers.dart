@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_proj/Data/app_strings.dart';
 import 'package:flutter_proj/Data/common_textstyle.dart';
+import 'package:flutter_proj/Presentation/common/common_asset_image.dart';
 
 import 'package:flutter_proj/Presentation/common/common_text.dart';
 
@@ -50,12 +51,19 @@ class containers extends StatelessWidget {
                   children: [
                     Padding(
                       padding: EdgeInsets.only(top: screenHeight * 0.01),
-                      child: Image.asset(
-                        'assets/images/pand mart.png',
-                        width: screenWidth * 0.28,
-                        height: screenHeight * 0.14,
-                        fit: BoxFit.contain,
+                      child: AssetImages(
+                        issvg: false,
+                        screenHeight: screenHeight * 0.14,
+                        screenWidth: screenWidth * .28,
+                        imagepath: 'assets/images/pand mart.png',
                       ),
+
+                      // child: Image.asset(
+                      //   'assets/images/pand mart.png',
+                      //   width: screenWidth * 0.28,
+                      //   height: screenHeight * 0.14,
+                      //   fit: BoxFit.contain,
+                      // ),
                     ),
                     Align(
                       alignment: Alignment.centerLeft,
@@ -119,12 +127,18 @@ class containers extends StatelessWidget {
                           crossAxisAlignment: CrossAxisAlignment.end,
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
-                            Image.asset(
-                              'assets/images/pick up.png',
-                              // width: screenWidth * 0.19,
-                              height: screenHeight * 0.08,
-                              fit: BoxFit.contain,
+                            AssetImages(
+                              issvg: false,
+                              screenHeight: screenHeight * 0.08,
+                              screenWidth: screenWidth * 0.19,
+                              imagepath: 'assets/images/pick up.png',
                             ),
+                            // Image.asset(
+                            //   'assets/images/pick up.png',
+                            //   // width: screenWidth * 0.19,
+                            //   height: screenHeight * 0.08,
+                            //   fit: BoxFit.contain,
+                            // ),
                             Row(
                               mainAxisAlignment: MainAxisAlignment.start,
                               children: [
@@ -242,12 +256,18 @@ class containers extends StatelessWidget {
                             Column(
                               mainAxisAlignment: MainAxisAlignment.start,
                               children: [
-                                Image.asset(
-                                  'assets/images/shop.png',
-                                  // width: screenWidth * 0.1,
-                                  height: screenHeight * 0.05,
-                                  fit: BoxFit.contain,
-                                ),
+                                AssetImages(
+                                  issvg: false,
+                                  screenHeight: screenHeight * 0.05,
+                                  screenWidth: screenWidth * 0.1,
+                                  imagepath: 'assets/images/shop.png',
+                                )
+                                // Image.asset(
+                                //   'assets/images/shop.png',
+                                //   // width: screenWidth * 0.1,
+                                //   height: screenHeight * 0.05,
+                                //   fit: BoxFit.contain,
+                                // ),
                               ],
                             ),
                           ],

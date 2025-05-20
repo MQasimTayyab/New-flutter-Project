@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_proj/Data/app_strings.dart';
 import 'package:flutter_proj/Data/common_textstyle.dart';
+import 'package:flutter_proj/Presentation/common/common_asset_image.dart';
 
 import 'package:flutter_proj/Presentation/common/common_svg.dart';
 import 'package:flutter_proj/Presentation/common/common_text.dart';
@@ -87,20 +88,30 @@ class Appbar extends StatelessWidget implements PreferredSizeWidget {
       actions: [
         Padding(
           padding: EdgeInsets.only(right: paddingRight),
-          child: CommonSvg(
+          // child: CommonSvg(
+          //   screenHeight: screenHeight * 0.025,
+          //   screenWidth: screenWidth * 0.035,
+          //   svgPath: 'assets/svg/heart.svg',
+          //   svgcolor: Color(0xffD60665),
+          // ),
+          child: AssetImages(
             screenHeight: screenHeight * 0.025,
             screenWidth: screenWidth * 0.035,
-            svgPath: 'assets/svg/heart.svg',
-            svgcolor: Color(0xffD60665),
+            imagepath: 'assets/svg/heart.svg',
           ),
         ),
         Padding(
           padding: EdgeInsets.symmetric(horizontal: screenWidth * 0.02),
-          child: CommonSvg(
-            svgPath: 'assets/svg/cart-arrow-down.svg',
-            screenWidth: screenWidth * 0.035,
+          // child: CommonSvg(
+          //   svgPath: 'assets/svg/cart-arrow-down.svg',
+          //   screenWidth: screenWidth * 0.035,
+          //   screenHeight: screenHeight * 0.025,
+          //   svgcolor: Color(0xffD60665),
+          // ),
+          child: AssetImages(
             screenHeight: screenHeight * 0.025,
-            svgcolor: Color(0xffD60665),
+            screenWidth: screenWidth * 0.035,
+            imagepath: 'assets/svg/cart-arrow-down.svg',
           ),
         ),
       ],

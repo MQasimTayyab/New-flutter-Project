@@ -67,16 +67,17 @@ class goodevening extends StatelessWidget {
             Column(
               mainAxisAlignment: MainAxisAlignment.start,
               children: [
-                // AssetImages(
-                //     imagepath: 'assets/images/good.png',
-                //     screenHeight: screenHeight * 0.12,
-                //     screenWidth: screenWidth * 0.28),
-                Image.asset(
-                  'assets/images/good.png',
-                  height: screenHeight * 0.12,
-                  width: screenWidth * 0.28,
-                  fit: BoxFit.contain,
-                ),
+                AssetImages(
+                    issvg: false,
+                    imagepath: 'assets/images/good.png',
+                    screenHeight: screenHeight * 0.12,
+                    screenWidth: screenWidth * 0.28),
+                // Image.asset(
+                //   'assets/images/good.png',
+                //   height: screenHeight * 0.12,
+                //   width: screenWidth * 0.28,
+                //   fit: BoxFit.contain,
+                // ),
               ],
             )
           ]),

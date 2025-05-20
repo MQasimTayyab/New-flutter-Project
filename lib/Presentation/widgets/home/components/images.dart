@@ -3,6 +3,7 @@ import 'package:flutter_proj/Application/Services/navigation_services.dart';
 import 'package:flutter_proj/Data/app_color.dart';
 import 'package:flutter_proj/Data/app_strings.dart';
 import 'package:flutter_proj/Data/common_textstyle.dart';
+import 'package:flutter_proj/Presentation/common/common_asset_image.dart';
 
 import 'package:flutter_proj/Presentation/common/common_text.dart';
 
@@ -44,12 +45,19 @@ class Images extends StatelessWidget {
                   children: [
                     ClipRRect(
                       borderRadius: BorderRadius.circular(5),
-                      child: Image.asset(
-                        'assets/images/pic1.png',
-                        height: screenHeight * 0.12,
-                        width: screenWidth * 0.53,
-                        fit: BoxFit.cover,
+                      child: AssetImages(
+                        issvg: false,
+                        imagepath: 'assets/images/pic1.png',
+                        screenHeight: screenHeight * 0.12,
+                        screenWidth: screenWidth * 0.53,
                       ),
+
+                      // child: Image.asset(
+                      //   'assets/images/pic1.png',
+                      //   height: screenHeight * 0.12,
+                      //   width: screenWidth * 0.53,
+                      //   fit: BoxFit.cover,
+                      // ),
                     ),
                     Column(
                       children: [
@@ -154,6 +162,12 @@ class Images extends StatelessWidget {
               children: [
                 ClipRRect(
                   borderRadius: BorderRadius.circular(5),
+                  // child: AssetImages(
+                  //   issvg: true,
+                  //   imagepath: 'assets/images/pic2.png',
+                  //   screenHeight: 0.12,
+                  //   screenWidth: 0.35,
+                  // ),
                   child: Image.asset(
                     'assets/images/pic2.png',
                     width: screenWidth * 0.35,

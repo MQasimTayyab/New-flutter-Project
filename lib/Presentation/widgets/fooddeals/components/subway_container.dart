@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_proj/Data/app_color.dart';
 import 'package:flutter_proj/Data/app_strings.dart';
 import 'package:flutter_proj/Data/common_textstyle.dart';
+import 'package:flutter_proj/Presentation/common/common_asset_image.dart';
 
 import 'package:flutter_proj/Presentation/common/common_svg.dart';
 import 'package:flutter_proj/Presentation/common/common_text.dart';
@@ -56,12 +57,17 @@ class Subwaycontainer extends StatelessWidget {
                     decoration: BoxDecoration(
                         color: Color(0xFFC4C4C4), shape: BoxShape.circle),
                     child: Center(
-                      child: CommonSvg(
-                        svgPath: 'assets/svg/Vector.svg',
-                        screenWidth: screenWidth * 0.02,
+                      child: AssetImages(
                         screenHeight: screenHeight * 0.02,
-                        svgcolor: Color(0xffD60665),
+                        screenWidth: screenWidth * 0.02,
+                        imagepath: 'assets/svg/Vector.svg',
                       ),
+                      // child: CommonSvg(
+                      //   svgPath: 'assets/svg/Vector.svg',
+                      //   screenWidth: screenWidth * 0.02,
+                      //   screenHeight: screenHeight * 0.02,
+                      //   svgcolor: Color(0xffD60665),
+                      // ),
                     ),
                   ),
                 ),
@@ -79,11 +85,16 @@ class Subwaycontainer extends StatelessWidget {
                       //   color: Color(0xffD60665),
                       // ),
                       child: Center(
-                        child: CommonSvg(
-                          svgPath: 'assets/svg/Vector1.svg',
-                          screenWidth: screenWidth * 0.025,
+                        // child: CommonSvg(
+                        //   svgPath: 'assets/svg/Vector1.svg',
+                        //   screenWidth: screenWidth * 0.025,
+                        //   screenHeight: screenHeight * 0.025,
+                        //   svgcolor: Color(0xffD60665),
+                        // ),
+                        child: AssetImages(
                           screenHeight: screenHeight * 0.025,
-                          svgcolor: Color(0xffD60665),
+                          screenWidth: screenWidth * 0.025,
+                          imagepath: 'assets/svg/Vector1.svg',
                         ),
                       ),
                     ),
@@ -102,11 +113,16 @@ class Subwaycontainer extends StatelessWidget {
                       //   color: Color(0xffD60665),
                       // ),
                       child: Center(
-                        child: CommonSvg(
-                          svgPath: 'assets/svg/info-circle.svg',
-                          screenWidth: screenWidth * 0.025,
+                        // child: CommonSvg(
+                        //   svgPath: 'assets/svg/info-circle.svg',
+                        //   screenWidth: screenWidth * 0.025,
+                        //   screenHeight: screenHeight * 0.025,
+                        //   svgcolor: Color(0xffD60665),
+                        // ),
+                        child: AssetImages(
                           screenHeight: screenHeight * 0.025,
-                          svgcolor: Color(0xffD60665),
+                          screenWidth: screenWidth * 0.025,
+                          imagepath: 'assets/svg/info-circle.svg',
                         ),
                       ),
                     ),

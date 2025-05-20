@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_proj/Application/Services/navigation_services.dart';
+import 'package:flutter_proj/Presentation/common/common_asset_image.dart';
 import 'package:flutter_proj/Presentation/common/common_svg.dart';
 import 'package:flutter_proj/Presentation/widgets/fooddeals/food_deals.dart';
 
@@ -44,11 +45,16 @@ class HeaderImage extends StatelessWidget {
                         color: Color(0xFFFFFFFF), shape: BoxShape.circle),
 
                     child: Center(
-                      child: CommonSvg(
-                        svgPath: 'assets/svg/Vector.svg',
-                        screenWidth: screenWidth * 0.02,
+                      // child: CommonSvg(
+                      //   svgPath: 'assets/svg/Vector.svg',
+                      //   screenWidth: screenWidth * 0.02,
+                      //   screenHeight: screenHeight * 0.02,
+                      //   svgcolor: Color(0xffD60665),
+                      // ),
+                      child: AssetImages(
                         screenHeight: screenHeight * 0.02,
-                        svgcolor: Color(0xffD60665),
+                        screenWidth: screenWidth * 0.02,
+                        imagepath: 'assets/svg/Vector.svg',
                       ),
                     ),
 

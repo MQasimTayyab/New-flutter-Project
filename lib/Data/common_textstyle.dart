@@ -3,8 +3,8 @@ import 'package:flutter_proj/Data/app_color.dart';
 
 extension TextScaler on BuildContext {
   double get textScaleFactor {
-    final scale = MediaQuery.of(this).textScaler.scale(12);
-    return scale > 1 ? 0.9 : scale;
+    final Textscale = MediaQuery.of(this).textScaleFactor;
+    return Textscale > 1 ? 0.9 : Textscale;
   }
 }
 

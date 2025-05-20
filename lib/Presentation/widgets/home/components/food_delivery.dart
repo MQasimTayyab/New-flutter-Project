@@ -73,18 +73,19 @@ class Fooddelivery extends StatelessWidget {
             ),
           ),
           SizedBox(
-            // width: screenWidth * 0.23,
-            height: screenHeight * 0.14,
-            // child: AssetImages(
-            //   screenHeight: screenHeight * 0.3,
-            //   screenWidth: screenWidth * 0.3,
-            //   imagepath: 'assets/images/foodd.png',
-            // )
-            child: Image.asset(
-              'assets/images/foodd.png',
-              fit: BoxFit.contain,
-            ),
-          )
+              // width: screenWidth * 0.23,
+              height: screenHeight * 0.14,
+              child: AssetImages(
+                issvg: false,
+                screenHeight: screenHeight * 0.3,
+                screenWidth: screenWidth * 0.3,
+                imagepath: 'assets/images/foodd.png',
+              )
+              // child: Image.asset(
+              //   'assets/images/foodd.png',
+              //   fit: BoxFit.contain,
+              // ),
+              )
         ],
       ),
     );

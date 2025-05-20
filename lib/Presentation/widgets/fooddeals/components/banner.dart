@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_proj/Data/app_strings.dart';
 import 'package:flutter_proj/Data/common_textstyle.dart';
+import 'package:flutter_proj/Presentation/common/common_asset_image.dart';
 
 import 'package:flutter_proj/Presentation/common/common_text.dart';
 
@@ -48,11 +49,17 @@ class BannerText extends StatelessWidget {
                   color: Color(0xFFD60665),
                 )),
           ),
-          Image(
-            image: AssetImage('assets/images/panda.png'),
-            width: screenWidth * 0.18,
-            height: screenHeight * 0.18,
-          ),
+          // Image(
+          //   image: AssetImage('assets/images/panda.png'),
+          //   width: screenWidth * 0.18,
+          //   height: screenHeight * 0.18,
+          // ),
+          AssetImages(
+            issvg: false,
+            screenHeight: screenHeight * 0.18,
+            screenWidth: screenWidth * 0.18,
+            imagepath: 'assets/images/panda.png',
+          )
 
           // SvgPicture.asset(
           //   'assets/svg/panda.svg',
